@@ -1,7 +1,7 @@
 require "minitest_helper"
 
-describe "Creating a Post" do
-  it "submit form data to create a new post" do
+feature "Creating a Post" do
+  scenario "submit form data to create a new post" do
     # Given a completed new post form
     visit new_post_path
     fill_in "Title", with: "Code Rails"
