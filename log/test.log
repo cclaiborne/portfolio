@@ -5040,3 +5040,291 @@ Processing by ProjectsController#index as HTML
   Rendered projects/index.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
   [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:13:44', '2014-01-23 05:13:44', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:13:44', '2014-01-23 05:13:44', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:13:44', '2014-01-23 05:13:44', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:13:44', '2014-01-23 05:13:44', 145475190)
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:13:44 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 109ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:14:08', '2014-01-23 05:14:08', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:14:08', '2014-01-23 05:14:08', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:14:08', '2014-01-23 05:14:08', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:14:08', '2014-01-23 05:14:08', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:14:08 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 65ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:15:35', '2014-01-23 05:15:35', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:15:35', '2014-01-23 05:15:35', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:15:35', '2014-01-23 05:15:35', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:15:35', '2014-01-23 05:15:35', 145475190)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:15:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:16:33', '2014-01-23 05:16:33', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:16:33', '2014-01-23 05:16:33', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:16:33', '2014-01-23 05:16:33', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:16:33', '2014-01-23 05:16:33', 145475190)
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:16:33 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:17:31', '2014-01-23 05:17:31', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:17:31', '2014-01-23 05:17:31', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:17:31', '2014-01-23 05:17:31', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:17:31', '2014-01-23 05:17:31', 145475190)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:17:31 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 65ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:17:42', '2014-01-23 05:17:42', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:17:42', '2014-01-23 05:17:42', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:17:42', '2014-01-23 05:17:42', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:17:42', '2014-01-23 05:17:42', 145475190)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:17:42 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 69ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:18:40', '2014-01-23 05:18:40', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:18:40', '2014-01-23 05:18:40', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:18:40', '2014-01-23 05:18:40', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:18:40', '2014-01-23 05:18:40', 145475190)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:18:40 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:18:48', '2014-01-23 05:18:48', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:18:48', '2014-01-23 05:18:48', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:18:48', '2014-01-23 05:18:48', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:18:48', '2014-01-23 05:18:48', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:18:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:21:39', '2014-01-23 05:21:39', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:21:39', '2014-01-23 05:21:39', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:21:39', '2014-01-23 05:21:39', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:21:39', '2014-01-23 05:21:39', 145475190)
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:21:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 67ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:22:52', '2014-01-23 05:22:52', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:22:52', '2014-01-23 05:22:52', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:22:52', '2014-01-23 05:22:52', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:22:52', '2014-01-23 05:22:52', 145475190)
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:22:52 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 68ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:23:09', '2014-01-23 05:23:09', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:23:09', '2014-01-23 05:23:09', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:23:09', '2014-01-23 05:23:09', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:23:09', '2014-01-23 05:23:09', 145475190)
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:23:09 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:23:24', '2014-01-23 05:23:24', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:23:24', '2014-01-23 05:23:24', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:23:24', '2014-01-23 05:23:24', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:23:24', '2014-01-23 05:23:24', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:23:24 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 66ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:23:36', '2014-01-23 05:23:36', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:23:36', '2014-01-23 05:23:36', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:23:36', '2014-01-23 05:23:36', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:23:36', '2014-01-23 05:23:36', 145475190)
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:23:36 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:23:47', '2014-01-23 05:23:47', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:23:47', '2014-01-23 05:23:47', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:23:47', '2014-01-23 05:23:47', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:23:47', '2014-01-23 05:23:47', 145475190)
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:23:47 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:25:34', '2014-01-23 05:25:34', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:25:34', '2014-01-23 05:25:34', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:25:34', '2014-01-23 05:25:34', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:25:34', '2014-01-23 05:25:34', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:25:34 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 67ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Code Rails', 'This is how I learned web development!', '2014-01-23 05:26:04', '2014-01-23 05:26:04', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-23 05:26:04', '2014-01-23 05:26:04', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('How meta', 'Ruby, Rails, Zurb, Javascript', '2014-01-23 05:26:04', '2014-01-23 05:26:04', 703402084)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies_used", "created_at", "updated_at", "id") VALUES ('Barnyard Cereal', 'Ruby, Rails, Farmville API, Automilker', '2014-01-23 05:26:04', '2014-01-23 05:26:04', 145475190)
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------------
+CheckForZurb Feature Test: test_0001_the test is sound
+------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-22 21:26:04 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 68ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
