@@ -1,4 +1,4 @@
-require "minitest_helper"
+require "test_helper"
 
 feature "Visiting a Post" do
   scenario "with existing posts" do

@@ -1,4 +1,4 @@
-require "minitest_helper"
+require "test_helper"
 
 feature "Creating a Post" do
   scenario "submit form data to create a new post" do
