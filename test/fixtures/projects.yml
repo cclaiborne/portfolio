@@ -1,7 +1,10 @@
-portfolio:
-  name: How meta
-  technologies_used: Ruby, Rails, Zurb, Javascript
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-freelance:
-  name: Barnyard Cereal
-  technologies_used: Ruby, Rails, Farmville API, Automilker
+one:
+  name: MyString
+  technologies: MyString
+
+two:
+  name: MyString
+  technologies: MyString

@@ -23,6 +23,10 @@ gem 'jquery-rails'
 
 gem 'foundation-rails'
 
+gem "better_errors"
+
+gem "binding_of_caller"
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -36,6 +40,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'pg'
+end
 
 group :test do
   gem 'minitest-rails-capybara'

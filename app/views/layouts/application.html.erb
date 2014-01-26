@@ -11,9 +11,25 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
+<body>
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to "Portfolio", root_path %></a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li><%= link_to "Browse Projects", projects_path %></li>
+    </ul>
+  </section>
+</nav>
+  <div class ="row">
+    <div class="large-7 columns"> <%= yield %></div>
+    <div class="large-4 columns">
+  </div>
 
-    <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
