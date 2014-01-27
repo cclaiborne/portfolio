@@ -1,1 +1,1 @@
-![alt text](/app/assets/images/screen.png "Title")
+![alt text](/app/assets/images/Screen.png "Title")
