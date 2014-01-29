@@ -1,7 +1,7 @@
 require "test_helper"
 
-feature "Deleting a Project" do
-  scenario "project is deleted with a click" do
+descibe "Deleting a Project" do
+  ir "project is deleted with a click" do
     # Given an existing post
     #post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
     #visit posts_path(posts(:cr))

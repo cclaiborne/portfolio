@@ -2,9 +2,9 @@ require "test_helper"
 
 feature "Deleting a Post" do
   scenario "post is deleted with a click" do
-    # Given an existing post
-    #post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
-    #visit posts_path(posts(:cr))
+    Given an existing post
+    post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
+    visit posts_path(posts(:cr))
     visit posts_path
 
     #name = projects(:portfolio).name

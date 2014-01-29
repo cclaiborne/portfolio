@@ -1,7 +1,7 @@
 require "test_helper"
 
-feature "As the site visitor, I want to see a developer's portfolio" do
-  scenario "viewing all projects" do
+descibe "As the site visitor, I want to see a developer's portfolio" do
+  it "viewing all projects" do
     # Given a a couple of projects (loaded from fixtures)
     # When I visit /projects
     visit projects_path

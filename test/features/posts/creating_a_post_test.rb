@@ -13,5 +13,9 @@ feature "Creating a Post" do
     # Then a new post should be created and displayed
     page.text.must_include "Post was successfully created"
     page.text.must_include "how I learned to make Rails apps"
+
+
+    page.has_css? "#author"
+    page.text.must_include users(:one).email # Use your fixture name here.
   end
 end

@@ -21,9 +21,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: blog_development
+  adapter: sqlite3
+  database: db/production.sqlite3
   pool: 5
-  username: blog
-  password:
+  timeout: 5000

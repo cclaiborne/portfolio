@@ -1,7 +1,8 @@
 require "test_helper"
 
-class ProjectTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+feature Project do
+  scenario "includes name in to_param" do
+    project = Project.create!(name: "Hello World")
+    project.to_param.must_equal "#{product.id}-hello-world"
+  end
 end

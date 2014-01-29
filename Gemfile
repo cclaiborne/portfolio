@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-
+gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
@@ -24,10 +24,6 @@ gem 'jquery-rails'
 
 gem 'foundation-rails'
 
-gem "better_errors"
-
-gem "binding_of_caller"
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -36,13 +32,18 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'minitest-rails'
 
+gem 'mini_portile'
+
+gem 'devise'
+
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
 group :development do
-  gem 'sqlite3'
 end
 
 group :production do
@@ -52,6 +53,7 @@ end
 
 group :test do
   gem 'minitest-rails-capybara'
+  gem 'minitest','~> 4.7.5'
   gem 'turn'
 end
 

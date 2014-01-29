@@ -10,7 +10,14 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path %> |
+  <%= link_to "Login", new_user_session_path %>
+<% end %>
 <body>
 <nav class="top-bar">
   <ul class="title-area">
@@ -22,11 +29,25 @@
     <ul class="right">
       <li class="divider"></li>
       <li><%= link_to "Browse Projects", projects_path %></li>
+      <li class="divider"></li>
+          <% if user_signed_in? %>
+            <li>
+            <%= link_to 'Log Out', destroy_user_session_path, :method => :delete %>
+            </li>
+          <% else %>
+            <li>
+            <%= link_to 'Sign Up', new_user_registration_path %>
+            </li>
+             <li class="divider"></li>
+            <li>
+            <%= link_to 'Log In', new_user_session_path %>
+            </li>
+          <% end %>
     </ul>
   </section>
 </nav>
   <div class ="row">
-    <div class="large-7 columns"> <%= yield %></div>
+    <div class="large-8 columns"> <%= yield %></div>
     <div class="large-4 columns">
   </div>
 

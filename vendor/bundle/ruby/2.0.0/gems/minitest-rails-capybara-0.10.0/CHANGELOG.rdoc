@@ -1,0 +1,50 @@
+=== 0.10.0 / 2013-07-23
+
+* Allow feature to work without "Feature Test"
+* Call reset_sessions! after tests [closes #7]
+* Add Capybara documentation
+
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.9...v0.10
+
+=== 0.9.0 / 2013-03-18
+
+* Add minitest-metadata dependency
+* Move capybara spec into TestCase
+* Add instructions for running tests
+* Update install instructions
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.5.1...v0.9
+
+=== 0.5.1 / 2013-01-11
+
+* Add the Capybara spec DSL
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.5...v0.5.1
+
+=== 0.5 / 2013-01-11
+
+* Create Capybara::Rails::TestCase
+* Add feature generator
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.1...v0.5
+
+=== 0.1 / 2012-08-02
+
+* Defer to minitest-capybara for Capybara integration
+* Add support for Capybara matchers using minitest-matchers
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.0.2...v0.1
+
+=== 0.0.2 / 2012-07-09
+
+* Correct loading issue
+
+https://github.com/blowmage/minitest-rails-capybara/compare/v0.0.1...v0.0.2
+
+=== 0.0.1 / 2012-07-07
+
+* 1 major enhancement
+
+  * Birthday!
+
