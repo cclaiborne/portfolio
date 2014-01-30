@@ -1,6 +1,6 @@
 cr:
-  name: MyString
-  technologies: MyString
+  title: MyString
+  body: MyString
 
 http:
   title: Intro to HTTP

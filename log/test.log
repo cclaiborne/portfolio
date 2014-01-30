@@ -5340,3 +5340,1456 @@ ProjectsHelperTest: test_sanity
 ------------------------------
 WelcomeHelperTest: test_sanity
 ------------------------------
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+  As a site visitor
+  I want to be able to sign out of my account
+  so that my data will be securely stored.
+ Feature Test: test_0001_sign out
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2014-01-29 13:47:13 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4526ms (Views: 4502.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------------
+Project Feature Test: test_0001_includes name in to_param
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "projects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 29 Jan 2014 21:48:58 UTC +00:00], ["name", "Hello World"], ["updated_at", Wed, 29 Jan 2014 21:48:58 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-------------------------------
+ProjectsHelperTest: test_sanity
+-------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------
+WelcomeHelperTest: test_sanity
+------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+ProjectsControllerTest: test_create
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------
+ProjectsControllerTest: test_destroy
+------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+---------------------------------
+ProjectsControllerTest: test_edit
+---------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------
+ProjectsControllerTest: test_index
+----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------
+ProjectsControllerTest: test_new
+--------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------
+ProjectsControllerTest: test_show
+---------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------
+ProjectsControllerTest: test_update
+-----------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+WelcomeControllerTest: test_should_get_index
+--------------------------------------------
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 30ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:27:01', '2014-01-29 23:27:01', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:23', '2014-01-29 23:30:23', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:30:50', '2014-01-29 23:30:50', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.5ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)[0m
+SQLite3::SQLException: table posts has no column named name: INSERT INTO "posts" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:34:52', '2014-01-29 23:34:52', 822229645)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)[0m
+SQLite3::SQLException: table posts has no column named technologies: INSERT INTO "posts" ("title", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:39:46', '2014-01-29 23:39:46', 822229645)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$0n0THymynPUvvS2kIZwmfu3NuM8k2gjZRF3.DqWaCGkvRFshUrwkO', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('abc@gmail.com', '$2a$04$QtQTfR6O8DWlNFx3t/m4q.5IxDiBcS5yCdcPPhr26rmYts1rwOEH2', '2014-01-29 23:40:30', '2014-01-29 23:40:30', 1034934474)
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (2.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 144ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Wed, 29 Jan 2014 23:40:30 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:40:30 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:40:30 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 17ms (ActiveRecord: 1.9ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (10.0ms)
+  Rendered posts/new.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:40:30 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:40:30 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:40:30 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Wed, 29 Jan 2014 23:40:31 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:40:31 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:40:31 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:40:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$ZLUe16a4bGUHV94QVjVDIuqg2fCliSRgg7JiWgCK/HRLunqAIbAoe', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('abc@gmail.com', '$2a$04$adjHMGeac2W4rIov9nO.8OJMk4HgsjcdoOxLxrd/3IX0DlmPzyHvm', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('editor@gmail.com', '$2a$04$0nOc8aCpNj7eBUFtHGhOSOs6JfVdC2lAwDv5rQDi4hUUR.9CVK9Ju', '2014-01-29 23:42:44', '2014-01-29 23:42:44', 217182653)[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:44 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.7ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 122ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 17ms (ActiveRecord: 1.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (11.6ms)
+  Rendered posts/new.html.erb within layouts/application (14.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653  [["last_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:42:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:42:45 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.9ms)
+  Rendered posts/new.html.erb within layouts/application (5.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "created_at", "updated_at", "id") VALUES ('abc@gmail.com', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "created_at", "updated_at", "id") VALUES ('editor@gmail.com', '2014-01-29 23:43:15', '2014-01-29 23:43:15', 217182653)[0m
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:15 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 124ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:15 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:15 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.1ms)
+  Rendered posts/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:43:16 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:43:16 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:43:16 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:43:16 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:16 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$79flP2Rl813x1YKP7Yq6eOKMjXT3sBkFsgpfVKMCTBpaq3cY8tWh.', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('abc@gmail.com', '$2a$04$ngyLMOJLQpnM/h0.3kIYW.pBI5LAULWslh3nrNqQTu0Nlzm.pP9jm', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('editor@gmail.com', '$2a$04$vKvZwoZ7omtfqWJcRniaQOywXdfy6tAyQKGgc1rPcOu20Yk9kZNie', '2014-01-29 23:43:39', '2014-01-29 23:43:39', 217182653)[0m
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 126ms (Views: 88.4ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 17ms (ActiveRecord: 1.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (8.6ms)
+  Rendered posts/new.html.erb within layouts/application (10.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653  [["last_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.4ms)
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (2.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"abc@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc@gmail.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.6ms)
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'editor@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:43:39 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:43:39 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$j0g6rXhMI7rVxnENTQS99OXEp0EPPkaeDZ2Zl1ZmDheFX8NR76s5.', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$kYzA1d8DylVLOCTY8hBcTuwcDJsXDw0VrRjYhIP7Ov6/3EcSCAm8m', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$kYzA1d8DylVLOCTY8hBcTuwcDJsXDw0VrRjYhIP7Ov6/3EcSCAm8m', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$PzwSliaPW4ivYNF7/PfoC.5MbLv6Jmin1fuStaf8RsJyDOh12wra2', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$POzm5L8lWJffPyVDC6pW6e5skWqGTtU8mN9qyRm1VBu2g9QXWhdIy', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)[0m
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$POzm5L8lWJffPyVDC6pW6e5skWqGTtU8mN9qyRm1VBu2g9QXWhdIy', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$PMyoMlazTV1n0FvWd9x2heFjfUFhcZn6vgsgXENfcLTKBOGoZxq6a', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$5TbqPR.8dCQOrkaQXaHnLuATAVrUILpZxqpDwsNY8NLSRxwuskfXq', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$5TbqPR.8dCQOrkaQXaHnLuATAVrUILpZxqpDwsNY8NLSRxwuskfXq', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$p8U34iwNc1jXugINgEHYAOnu/MfRaoUlWx1fctX5WO6xPwfneNc7u', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$TsyyZt6LeejWewr7RufgIuM5e2rrtI2jRUGqnXh5PehmzCZI61MD6', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)[0m
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$TsyyZt6LeejWewr7RufgIuM5e2rrtI2jRUGqnXh5PehmzCZI61MD6', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$0SRlKV1ja7W8LD9TZ1Od2.2xtRT2QR8Cp.D09hakc3OJCk.YMfxTm', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$Eex0B8xMO.a97jRl93xVs.qSNHb0NKwtMqr3ppPvbY626JmQg.TAe', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$Eex0B8xMO.a97jRl93xVs.qSNHb0NKwtMqr3ppPvbY626JmQg.TAe', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "posts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 822229645)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 393743796)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "projects"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$8FeBjky/X7jRtee967ndNeGtI2mBZCfvV539sU6w7wjqOh8OK5ftu', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$DANVFYYXpTeMrlw9qLE0dO/SpSAgQyH4S3qWMXL1/iiweE48GZaO.', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)[0m
+SQLite3::SQLException: table users has no column named role: INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$DANVFYYXpTeMrlw9qLE0dO/SpSAgQyH4S3qWMXL1/iiweE48GZaO.', 'author', '2014-01-29 23:47:30', '2014-01-29 23:47:30', 1034934474)
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$S25niVXhQht.bm2A3H8gfuZUyasv6eowa1I2O2V8Eani7avSQx3wO', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$PdgxCg7t6jSQqW19yre4euTBlTMpAuobdb813iypIBhZZJZrg8/Uy', 'author', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('editor@example.com', '$2a$04$Fx7KDCvb2Y4mxSmqplnmeO7qFGWkELUamKrt34R.fZBMzBJcakuDC', 'editor', '2014-01-29 23:48:32', '2014-01-29 23:48:32', 217182653)[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 130ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 16ms (ActiveRecord: 1.8ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.7ms)
+  Rendered posts/new.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (2.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653  [["last_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 822229645]]
+Started POST "/posts" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"MyString", "body"=>"MyString"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "MyString"], ["created_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["title", "MyString"], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/posts/822229646
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+Started GET "/posts/822229646" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"822229646"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", "822229646"]]
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.9ms)
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653[0m  [["last_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["current_sign_in_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Wed, 29 Jan 2014 23:48:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 15:48:32 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.6ms)
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$Tvr1lb3sCBwK9k8CEhduGeuYeeByuNddT.Yf0zp1/1xBfrayUmKee', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$W7dFX67z7hwiehHBZWQrxe/Fbmaw3dmhelbqFyB9fII72xyXsglL6', 'author', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('editor@example.com', '$2a$04$Z0aXyvuzGTQ/0z8RrjaIbuuGxPiLNHUvSn7fgBHzgl03BPlbyfw8O', 'editor', '2014-01-30 00:18:48', '2014-01-30 00:18:48', 217182653)[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.6ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 132ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474[0m  [["last_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 20ms (ActiveRecord: 1.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (7.6ms)
+  Rendered posts/new.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 13ms
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653[0m  [["last_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (1.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653  [["last_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:18:48 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:18:48 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.4ms)
+  Rendered posts/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 7ms
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "posts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 822229645)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at", "id") VALUES ('Intro to HTTP', 'It''s all about the request-response cycle!', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 393743796)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "projects"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "projects" ("name", "technologies", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "id") VALUES ('SampleTitle@gmail.com', '$2a$04$hdw4wk5zpJdENZM1aEvFIOhuPFJ6ZnihOcDeeyCZJ3sgceJdYikYy', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('author@example.com', '$2a$04$2axmI3rwI5ssTdDZ4dvqYO8m2/33hQcsUU5KJRKXG8dd6QCYDOTPC', 'author', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 1034934474)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "id") VALUES ('editor@example.com', '$2a$04$HXmM.KaJcC0SLoyZgJ2PneNe/urrPWr5MTUzZRQFWbCT7Uf50.oSG', 'editor', '2014-01-30 00:23:49', '2014-01-30 00:23:49', 217182653)[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0001_As an author I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 123ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474[0m  [["last_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 17ms (ActiveRecord: 1.7ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (8.7ms)
+  Rendered posts/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 13ms
+  [1m[35m (1.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0002_As an editor I want to create posts so that I can share great content with the world
+----------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653[0m  [["last_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 6ms
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0003_unauthenticated site visitors cannot visit new_post_path
+------------------------------------------------------------------------------------------------
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.9ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0004_As a site visitor I should not be able to create posts so that I can't modify a site I don't own
+----------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/posts" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0005_As an author I should not be able to publish posts so that I can give the editor publishing control
+-------------------------------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1034934474]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"author@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'author@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1034934474  [["last_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1034934474 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.9ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------------------------------------------------------------------------
+Creating a Post Feature Test: test_0006_As an editor I want to publish posts so that I can make posts live on the site
+----------------------------------------------------------------------------------------------------------------------
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/devise-3.2.2/app/views/devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 217182653]]
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"editor@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'editor@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 217182653  [["last_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["current_sign_in_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Thu, 30 Jan 2014 00:23:49 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 217182653 ORDER BY "users"."id" ASC LIMIT 1
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+Started GET "/posts/new" for 127.0.0.1 at 2014-01-29 16:23:49 -0800
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
