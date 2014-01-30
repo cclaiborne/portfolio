@@ -12,9 +12,9 @@
 
 <p id="status">
   <b>Status:</b>
-   <% if current_user.role == "editor" %>
+   <%# if current_user.role == "editor" %>
   <%= @post.published? ? "Published" : "Unpublished" %>
-    <% end %>
+    <%# end %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
