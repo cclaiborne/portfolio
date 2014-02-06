@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140130002017) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "published"
+    t.boolean  "published"
   end
 
   create_table "projects", force: true do |t|

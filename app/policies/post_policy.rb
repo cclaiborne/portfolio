@@ -2,7 +2,7 @@ class PostPolicy < ApplicationPolicy
   class Scope < Struct.new(:user, :scope)
     attr_accessor :user, :post
     def resolve
-      scope
+        scope
     end
     def initialize(user, post)
       @user = user
@@ -18,15 +18,15 @@ class PostPolicy < ApplicationPolicy
     end
 
     def update?
-      @user.author? || @user.editor
+       @user.author? || @user.editor?
     end
 
     def destroy?
-      @posts = policy_scope(Post)
+       @user.editor?
     end
 
     def publish?
-      @user.editor?
+       @user.editor?
     end
   end
 end

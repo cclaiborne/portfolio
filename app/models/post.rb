@@ -9,4 +9,5 @@ class Post < ActiveRecord::Base
   def published?
     published
   end
+
 end

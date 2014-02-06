@@ -9,18 +9,26 @@
       <th></th>
     </tr>
   </thead>
-  <tbody>
+    <tbody>
     <% @posts.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.body %></td>
-      <td><%= link_to 'Show', post %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-
-      <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+      <% if post.published? || policy(post).index? %>
+        <tr id="<%= dom_id(post) %>">
+          <td><%= post.title %></td>
+          <td><%= post.body %></td>
+          <td><%= link_to 'Show', post %></td>
+          <td>
+            <% if current_user && policy(post).update? %>
+              <%= link_to 'Edit', edit_post_path(post) %>
+            <% end %>
+          </td>
+          <td>
+            <% if current_user && policy(post).destroy? %>
+              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
-<br>
 <%= link_to 'New Post', new_post_path %>
