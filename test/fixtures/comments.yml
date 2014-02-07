@@ -1,0 +1,10 @@
+author_comment:
+  author:
+  author_url: user_path(users(:author))
+  author_email: users(:author)
+  user_ip: users(:users).current_sign_in_ip
+  user_agent: "MyString"
+  referrer: "MyString"
+  content: "Nice post, you!"
+  approved: true
+  post: cr

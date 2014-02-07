@@ -7273,3 +7273,22 @@ WelcomeControllerTest: test_should_get_index
 Processing by WelcomeController#index as HTML
 Completed 500 Internal Server Error in 5ms
   [1m[35m (0.1ms)[0m  rollback transaction
+Unable to load comment, underlying cause No such file to load -- comment 
+
+ /Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `block in require'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:214:in `load_dependency'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:229:in `require'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:330:in `require_or_load'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:289:in `depend_on'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activesupport-4.0.2/lib/active_support/dependencies.rb:207:in `require_dependency'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:773:in `try_to_load_dependency'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:792:in `block in require_fixture_classes'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:790:in `each'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:790:in `require_fixture_classes'
+/Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/activerecord-4.0.2/lib/active_record/fixtures.rb:768:in `fixtures'
+/Users/christopherclaiborne/workspace/Portfolio/test/test_helper.rb:10:in `<class:TestCase>'
+/Users/christopherclaiborne/workspace/Portfolio/test/test_helper.rb:8:in `<top (required)>'
+/Users/christopherclaiborne/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+/Users/christopherclaiborne/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+test/features/comments/creating_a_comment_test.rb:1:in `<main>'

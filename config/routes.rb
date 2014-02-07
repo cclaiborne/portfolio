@@ -1,8 +1,11 @@
 Portfolio::Application.routes.draw do
   root 'welcome#index'
   resources :projects
-  resources :posts
   devise_for :users
+
+    resources :posts do
+    resources :comments
+  end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

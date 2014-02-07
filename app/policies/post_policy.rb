@@ -8,25 +8,23 @@ class PostPolicy < ApplicationPolicy
       @user = user
       @post = post
     end
-
     def index?
       if @user.nil?
-        false
+         false
       else
-        @user.author? || @user.editor?
+         @user.author? || @user.editor?
       end
     end
-
     def update?
-       @user.author? || @user.editor?
+      @user.author? || @user.editor?
     end
 
     def destroy?
-       @user.editor?
+      @user.editor?
     end
 
     def publish?
-       @user.editor?
+      @user.editor?
     end
   end
 end
