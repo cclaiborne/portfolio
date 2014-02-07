@@ -1,5 +1,6 @@
 class PostPolicy < ApplicationPolicy
   class Scope < Struct.new(:user, :scope)
+  end
     attr_accessor :user, :post
     def resolve
         scope
@@ -26,5 +27,4 @@ class PostPolicy < ApplicationPolicy
     def publish?
       @user.editor?
     end
-  end
 end
