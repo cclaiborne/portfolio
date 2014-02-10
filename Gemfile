@@ -5,6 +5,8 @@ gem 'rails', '4.0.2'
 
 gem 'pundit'
 
+gem "figaro"
+
 gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -61,7 +63,9 @@ group :test do
   gem 'minitest-rails-capybara'
   gem 'minitest','~> 4.7.5'
   gem 'turn'
+  gem 'simplecov', :require => false
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
