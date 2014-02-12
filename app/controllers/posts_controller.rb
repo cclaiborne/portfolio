@@ -1,11 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  #expose(:post)
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
-    #@posts = policy_scope(Post.all)
   end
 
   # GET /posts/1
@@ -27,6 +26,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     respond_to do |format|
+      authorize @posts
       if @post.save
         current_user.posts << @post
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
