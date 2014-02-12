@@ -3,7 +3,12 @@ class PostPolicy < ApplicationPolicy
   end
     attr_accessor :user, :post
     def resolve
+      #editor may view all posts
+      #if user.editor?
         scope
+      #visitors may only view published posts
+      #else
+        #scope.where(published: true)
     end
     def initialize(user, post)
       @user = user
