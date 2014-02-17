@@ -2,7 +2,9 @@ Portfolio::Application.routes.draw do
   root 'welcome#index'
   resources :projects
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
-    resources :posts do
+  scope ":locale" do
+  end
+  resources :posts do
     resources :comments
   end
 
