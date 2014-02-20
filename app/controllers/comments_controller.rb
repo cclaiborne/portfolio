@@ -2,6 +2,9 @@ class CommentsController < ApplicationController
   before_filter :load_commentable
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+  def new
+    @comment = @commentable.comments.new
+  end
 
   def index
     @comments = @commentable.comments
@@ -14,16 +17,16 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to @commentable, notice: 'Comment was successfully created.'
     else
-      redirect_to @post, notice: 'Comment was not saved successfully.'
+      redirect_to @commentable, notice: 'Comment was not saved successfully.'
     end
   end
 
   def update
     @comment = Comment.find(params[:id])
     if @comment.update(comment_params)
-      redirect_to @post, notice: 'Comment was successfully approved.'
+      redirect_to @commentable, notice: 'Comment was successfully approved.'
     else
-      redirect_to @post, notice: 'Comment was NOT approved.'
+      redirect_to @commentable, notice: 'Comment was NOT approved.'
     end
   end
 
