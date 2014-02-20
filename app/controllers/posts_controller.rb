@@ -26,10 +26,11 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     respond_to do |format|
-      authorize @posts
+      #authorize @post
       if @post.save
         current_user.posts << @post
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.js
         format.json { render action: 'show', status: :created, location: @post }
       else
         format.html { render action: 'new' }
@@ -56,9 +57,11 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+    authorize @post
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url }
+      format.js
       format.json { head :no_content }
     end
   end
