@@ -30,23 +30,26 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 4.00 gigabytes
-Default processor set: 193 tasks, 893 threads, 4 processors
-Load average: 1.93, Mach factor: 2.13
+Default processor set: 184 tasks, 911 threads, 4 processors
+Load average: 2.17, Mach factor: 1.83
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
 PATH: /Users/christopherclaiborne/workspace/Portfolio/vendor/bundle/ruby/2.1.0/gems/nokogiri-1.6.1/ports/x86_64-apple-darwin13.0.0/libxml2/2.8.0/bin
+PATH: /Users/christopherclaiborne/.rbenv/bin
+PATH: /Users/christopherclaiborne/.rbenv/bin
 PATH: /Users/christopherclaiborne/.rvm/gems/ruby-2.1.0/bin
 PATH: /Users/christopherclaiborne/.rvm/gems/ruby-2.1.0@global/bin
 PATH: /Users/christopherclaiborne/.rvm/rubies/ruby-2.1.0/bin
-PATH: /Users/christopherclaiborne/.rvm/bin
 PATH: /Users/christopherclaiborne/.rbenv/bin
 PATH: /usr/local/bin
 PATH: /usr/bin
 PATH: /bin
 PATH: /usr/sbin
 PATH: /sbin
+PATH: /usr/local/bin
+PATH: /Users/christopherclaiborne/.rvm/bin
 
 
 ## ----------- ##
@@ -1145,7 +1148,7 @@ configure:14199: checking for _stat
 configure:14255: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__stat", referenced from:
-      _main in conftest-cBbntr.o
+      _main in conftest-gY6Szx.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:14262: $? = 1
@@ -1664,7 +1667,7 @@ PYTHON_SITE_PACKAGES=''
 PYTHON_SUBDIR=''
 PYTHON_VERSION=''
 RANLIB='ranlib'
-RELDATE='Mon Jan 27 2014'
+RELDATE='Thu Feb 20 2014'
 RM='/bin/rm'
 SED='/usr/bin/sed'
 SET_MAKE=''

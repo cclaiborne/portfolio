@@ -13,5 +13,5 @@ linking shared-object atomic_reference.bundle
 ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 atomic_reference.bundle ./.gem.20140127-92513-5yb92p
+/usr/bin/install -m 0755 atomic_reference.bundle ./.gem.20140220-14587-6io0jl
 installing default atomic_reference libraries

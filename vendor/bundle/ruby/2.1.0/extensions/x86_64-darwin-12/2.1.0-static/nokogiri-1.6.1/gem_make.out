@@ -67,5 +67,5 @@ linking shared-object nokogiri/nokogiri.bundle
 ld: warning: directory not found for option '-L/Users/mpapis/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nokogiri.bundle ./.gem.20140127-92513-iq7ac0/nokogiri
+/usr/bin/install -m 0755 nokogiri.bundle ./.gem.20140220-14587-98cjcw/nokogiri
 installing default nokogiri libraries

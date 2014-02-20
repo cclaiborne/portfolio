@@ -30,22 +30,25 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 4.00 gigabytes
-Default processor set: 193 tasks, 909 threads, 4 processors
-Load average: 9.06, Mach factor: 0.48
+Default processor set: 185 tasks, 905 threads, 4 processors
+Load average: 2.93, Mach factor: 1.55
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
+PATH: /Users/christopherclaiborne/.rbenv/bin
+PATH: /Users/christopherclaiborne/.rbenv/bin
 PATH: /Users/christopherclaiborne/.rvm/gems/ruby-2.1.0/bin
 PATH: /Users/christopherclaiborne/.rvm/gems/ruby-2.1.0@global/bin
 PATH: /Users/christopherclaiborne/.rvm/rubies/ruby-2.1.0/bin
-PATH: /Users/christopherclaiborne/.rvm/bin
 PATH: /Users/christopherclaiborne/.rbenv/bin
 PATH: /usr/local/bin
 PATH: /usr/bin
 PATH: /bin
 PATH: /usr/sbin
 PATH: /sbin
+PATH: /usr/local/bin
+PATH: /Users/christopherclaiborne/.rvm/bin
 
 
 ## ----------- ##
@@ -1541,7 +1544,7 @@ configure:13449: checking for isnand
 configure:13449: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_isnand", referenced from:
-      _main in conftest-qQOE5h.o
+      _main in conftest-rCuLxe.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13449: $? = 1
@@ -1648,7 +1651,7 @@ configure:13449: checking for fp_class
 configure:13449: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_fp_class", referenced from:
-      _main in conftest-uAO8mo.o
+      _main in conftest-KWFY5u.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13449: $? = 1
@@ -1755,7 +1758,7 @@ configure:13449: checking for class
 configure:13449: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_class", referenced from:
-      _main in conftest-rQ3A9s.o
+      _main in conftest-wVcJ0d.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13449: $? = 1
@@ -1862,7 +1865,7 @@ configure:13449: checking for fpclass
 configure:13449: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_fpclass", referenced from:
-      _main in conftest-xetXfQ.o
+      _main in conftest-7lUfjd.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13449: $? = 1
@@ -1987,7 +1990,7 @@ configure:13473: checking for _stat
 configure:13473: gcc -o conftest -g -O2   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "__stat", referenced from:
-      _main in conftest-GxXvR9.o
+      _main in conftest-c41jap.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:13473: $? = 1
@@ -2158,7 +2161,7 @@ configure:14350: checking for shl_load
 configure:14350: gcc -o conftest -g -O2 -pedantic -W -Wformat -Wunused -Wimplicit -Wreturn-type -Wswitch -Wcomment -Wtrigraphs -Wformat -Wchar-subscripts -Wuninitialized -Wparentheses -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -Wno-long-long   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_shl_load", referenced from:
-      _main in conftest-n5sSmi.o
+      _main in conftest-Wja8X0.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:14350: $? = 1
@@ -2406,9 +2409,9 @@ configure:15063: checking for iconv
 configure:15079: gcc -o conftest -g -O2 -pedantic -W -Wformat -Wunused -Wimplicit -Wreturn-type -Wswitch -Wcomment -Wtrigraphs -Wformat -Wchar-subscripts -Wuninitialized -Wparentheses -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -Wno-long-long   conftest.c  >&5
 Undefined symbols for architecture x86_64:
   "_iconv", referenced from:
-      _main in conftest-VdmDLt.o
+      _main in conftest-rX8OMg.o
   "_iconv_open", referenced from:
-      _main in conftest-VdmDLt.o
+      _main in conftest-rX8OMg.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:15079: $? = 1
@@ -2890,7 +2893,7 @@ RDL_LIBS=''
 READER_TEST='Readertests'
 REBUILD_DOCS_FALSE=''
 REBUILD_DOCS_TRUE='#'
-RELDATE='Mon Jan 27 2014'
+RELDATE='Thu Feb 20 2014'
 RM='/bin/rm'
 SED='/usr/bin/sed'
 SET_MAKE=''
