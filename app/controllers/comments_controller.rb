@@ -1,20 +1,24 @@
 class CommentsController < ApplicationController
-
+  before_filter :load_commentable
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+
+  def index
+    @comments = @commentable.comments
+  end
+
   def create
-    @post = Post.find(params[:post_id])
-    @comment = @post.comments.build(comment_params)
+    #@post = Post.find(params[:post_id])
+    @comment = @commentable.comments.build(comment_params)
     authorize @comment
     if @comment.save
-      redirect_to @post, notice: 'Comment was successfully created.'
+      redirect_to @commentable, notice: 'Comment was successfully created.'
     else
       redirect_to @post, notice: 'Comment was not saved successfully.'
     end
   end
 
   def update
-    @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
     if @comment.update(comment_params)
       redirect_to @post, notice: 'Comment was successfully approved.'
@@ -24,12 +28,12 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
-    @post = @comment.post
+    @comment = @commentable.comments.find(params[:id])
+    #@post = @comment.post
     if @comment.destroy
-      redirect_to @post, notice: 'Comment annihilated!'
+      redirect_to @commentable, notice: 'Comment deleted'
     else
-      redirect_to @post, notice: 'Comment was not removed!'
+      redirect_to @commentable, notice: 'Comment was not deleted'
     end
   end
 
@@ -43,4 +47,9 @@ class CommentsController < ApplicationController
       flash[:error] = "You must log in with Twitter to comment!"
       redirect_to request.headers["Referer"] || root_path
     end
+
+    def load_commentable
+      resource, id = request.path.split('/')[1, 2]
+      @commentable = resource.singularize.classify.constantize.find(id)
+  end
 end
