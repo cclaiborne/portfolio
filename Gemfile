@@ -44,7 +44,7 @@ gem 'mini_portile'
 
 gem 'devise'
 
-
+gem 'paperclip', '~> 4.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
