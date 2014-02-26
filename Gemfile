@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 
 gem 'pundit'
 
@@ -54,6 +54,7 @@ group :doc do
 end
 
 group :development do
+  gem 'brakeman', :require => false
 end
 
 group :production do
