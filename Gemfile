@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 
 gem 'pundit'
 
-gem "figaro"
+gem 'figaro'
 
 gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
