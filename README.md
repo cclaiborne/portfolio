@@ -1,2 +1,2 @@
 ![alt text](/app/assets/images/screen.png "Screenshot")
-![alt text](output.html "Brakeman Report")
+![alt text](/app/assets/images/brakeman.png "Brakeman")
