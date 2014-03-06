@@ -1,29 +1,6 @@
-<%= form_for(@project) do |f| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
-
-      <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br/>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :technologies %><br/>
-    <%= f.text_field :technologies %>
-  </div>
-  <div class="field">
-    <%= f.label :pic %><br/>
-    <%= f.file_field :pic %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= simple_form_for(@project) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :technologies %>
+  <%= f.input :pic %>
+  <%= f.button :submit %>
 <% end %>

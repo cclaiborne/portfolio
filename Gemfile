@@ -5,7 +5,9 @@ gem 'rails', '4.0.3'
 
 gem 'pundit'
 
-gem 'figaro'
+gem 'browser-timezone-rails'
+
+gem 'simple_form'
 
 gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
