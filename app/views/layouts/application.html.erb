@@ -19,8 +19,6 @@
     <%= link_to "Login", new_user_session_path %>  |
     <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter) %>
     <% end %> |
-    <%= link_to_unless_current "English", locale: "en" %> |
-    <%= link_to_unless_current "Wookieespeak", locale: "wk" %>
   <body>
     <nav class="top-bar">
       <ul class="title-area">

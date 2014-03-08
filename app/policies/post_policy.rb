@@ -1,13 +1,15 @@
 class PostPolicy < ApplicationPolicy
+  attr_accessor :user, :post
+
+
   class Scope < Struct.new(:user, :scope)
-    attr_accessor :user, :post
     def resolve
-      #editor may view all posts
-      if user.editor?
-        scope
-      #visitors may only view published posts
-      else
+      if user.nil?
         scope.where(published: true)
+      elsif user.editor?
+        scope.all
+      elsif user.author?
+        scope.where(author: user)
       end
     end
   end
@@ -32,5 +34,13 @@ class PostPolicy < ApplicationPolicy
 
   def publish?
     @user.editor?
+  end
+
+  def permitted_attributes
+    if @user.editor?
+      [:title, :body, :published]
+    else
+      [:title, :body]
+    end
   end
 end

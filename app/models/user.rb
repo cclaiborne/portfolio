@@ -1,23 +1,32 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
+  # :confirmable, :lockable, :timeoutable
+  devise :database_authenticatable, :registerable, :omniauthable,
+         :recoverable, :rememberable, :trackable, :validatable
+
   has_many :posts, foreign_key: "author_id"
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :omniauthable
+
+  after_create :assign_user_role
+
   def author?
-    role == "author"
+    role == 'author'
   end
 
   def editor?
-    role == "editor"
+    role == 'editor'
   end
 
-   def self.from_omniauth(auth)
+  def user?
+    role == 'user'
+  end
+
+  def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
       user.name = auth.info.nickname
       user.email = "#{user.name}-CHANGEME@twitter.example.com"
+      user.role = "user"
     end
   end
 
@@ -43,4 +52,10 @@ class User < ActiveRecord::Base
       super
     end
   end
+
+  private
+    def assign_user_role
+      self.role = 'user'
+      self.save
+    end
 end
