@@ -1,7 +1,6 @@
 class PostPolicy < ApplicationPolicy
   attr_accessor :user, :post
 
-
   class Scope < Struct.new(:user, :scope)
     def resolve
       if user.nil?
